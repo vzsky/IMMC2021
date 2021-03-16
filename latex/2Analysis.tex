@@ -1,0 +1,55 @@
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Player}} & \textbf{Cumulative Rating}                \\ \hline
+Federer R.                            & 7930.7440     \\\hline
+Mirnyi M.                             & 7907.3510     \\\hline
+Hrbaty D.                             & 7906.3070     \\\hline
+Djokovic N.                           & 7903.0164     \\\hline
+Verdasco F.                           & 7897.5910     \\\hline
+\end{tabular}
+\caption{The table shows the highest cumulative rating between 2000 - 2016 of the top 5 players.}
+\label{tab_goat}
+\end{table}
+
+From the table \ref{tab_goat}, Federer R. is the GOAT that our model chose with the cumulative rating of 7939.2381. %grammarlied
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Year} & \textbf{Australian Open}            & \textbf{French Open}                & \textbf{Wimbledon}                  & \textbf{US Open}                    \\ \hline
+2000          & Agassi A.                           & Kuerten G.                          & Sampras P.                          & Safin M.                            \\ \hline
+2001          & Agassi A.                           & Kuerten G.                          & Ivanisevic G.                       & Hewitt L.                           \\ \hline
+2002          & Johansson T.                        & Costa A.                            & Hewitt L.                           & Sampras P.                          \\ \hline
+2003          & Agassi A.                           & Ferrero J.                          & \cellcolor[HTML]{FFDDB3}Federer R.  & Roddick A.                          \\ \hline
+2004          & \cellcolor[HTML]{FFDDB3}Federer R.  & Gaudio G.                           & \cellcolor[HTML]{FFDDB3}Federer R.  & \cellcolor[HTML]{FFDDB3}Federer R.  \\ \hline
+2005          & Safin M.                            & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{FFDDB3}Federer R.  & \cellcolor[HTML]{FFDDB3}Federer R.  \\ \hline
+2006          & \cellcolor[HTML]{FFDDB3}Federer R.  & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{FFDDB3}Federer R.  & \cellcolor[HTML]{FFDDB3}Federer R.  \\ \hline
+2007          & \cellcolor[HTML]{FFDDB3}Federer R.  & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{FFDDB3}Federer R.  & \cellcolor[HTML]{FFDDB3}Federer R.  \\ \hline
+2008          & \cellcolor[HTML]{CBCEFB}Djokovic N. & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{FFDDB3}Federer R.  \\ \hline
+2009          & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{FFDDB3}Federer R.  & \cellcolor[HTML]{FFDDB3}Federer R.  & Martin J.                           \\ \hline
+2010          & \cellcolor[HTML]{FFDDB3}Federer R.  & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{B4FFB4}Nadal R.    \\ \hline
+2011          & \cellcolor[HTML]{CBCEFB}Djokovic N. & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{CBCEFB}Djokovic N. & \cellcolor[HTML]{CBCEFB}Djokovic N. \\ \hline
+2012          & \cellcolor[HTML]{CBCEFB}Djokovic N. & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{FFDDB3}Federer R.  & Murray A.                           \\ \hline
+2013          & \cellcolor[HTML]{CBCEFB}Djokovic N. & \cellcolor[HTML]{B4FFB4}Nadal R.    & Murray A.                           & \cellcolor[HTML]{B4FFB4}Nadal R.    \\ \hline
+2014          & Wawrinka S.                         & \cellcolor[HTML]{B4FFB4}Nadal R.    & \cellcolor[HTML]{CBCEFB}Djokovic N. & Cilic M.                            \\ \hline
+2015          & \cellcolor[HTML]{CBCEFB}Djokovic N. & Wawrinka S.                         & \cellcolor[HTML]{CBCEFB}Djokovic N. & \cellcolor[HTML]{CBCEFB}Djokovic N. \\ \hline
+2016          & \cellcolor[HTML]{CBCEFB}Djokovic N. & \cellcolor[HTML]{CBCEFB}Djokovic N. & Murray A.                           & Wawrinka S.                         \\ \hline
+\end{tabular}
+\caption{The table by \cite{GLW} lists the Grand Slam men's tennis singles champions from 2000 to 2016.}
+\label{tab_champ}
+\end{table}
+
+
+From the table \ref{tab_champ}, Federer R. won the most championships (17) from 2000 to 2016 while the $4^{th}$ is Djokovic N. which won 12 championships. This is the main reason why Federer R. is the GOAT. However, rank 2 and 3: Mirnyi M. and Hrbaty D. are the two who never won any championships is a little odd. For Mirnyi M., he has competed in 62 matches total, 2 of them won against Federer R. and Hrbaty D., and most of the matches he played are close games. For Hrbaty D., he has competed in 79 matches in total, although he did not win against any top 5 players, most of his winning matches, were landslide victories.\\
+\textbf{Note} that we use the data from 2000 to 2016 only because there is no data before 2000. Actually, the input should be the data collected since the first Grand Slam Tournament. Thus, we are not sure that who is the actual GOAT but Federer R. is the GOAT if we consider only the years 2000 to 2016.%grammarlied
+\subsubsection{Model Strengths}
+\begin{enumerate}
+    \item This model reward player who not only high rating players but also long consistency rating.
+    \item Do not let newbie take the ranking so easily by luck.
+    \item Pro players have a chance to drop from the tier list if they cannot maintain their performance. %grammarlied
+\end{enumerate}
+\subsubsection{Model Limitations}
+Some players in the top tier may come from landslide victories rather than winning a great match with a tough competitor, Hrbaty D. for example.  However, it does not mean that they are not good players. %grammarlied

@@ -1,0 +1,868 @@
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Agenor R.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 7, 6, 6, '' ],
+  loseSets: [ 7, 6, 3, 3, '' ],
+  comment: null,
+  year: '2000'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Dupuis A.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 7, 7, 7, '' ],
+  loseSets: [ 7, 6, 6, 6, '' ],
+  comment: null,
+  year: '2000'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '3rd Round',
+  bestOf: 5,
+  winner: 'Rochus C.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 3, 6, 6, 7, '' ],
+  loseSets: [ 6, 4, 3, 6, '' ],
+  comment: null,
+  year: '2000'
+}
+{
+  atp: 32,
+  tourney: 'French Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Vicente F.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 2 ],
+  winSets: [ 3, 5, 6, 6, 6 ],
+  loseSets: [ 6, 7, 3, 4, 4 ],
+  comment: null,
+  year: '2000'
+}
+{
+  atp: 37,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Ulihrach B.',
+  wonBy: [ 1, 0 ],
+  winSets: [ 6, 4, '', '', '' ],
+  loseSets: [ 2, 0, '', '', '' ],
+  comment: 'RET',
+  year: '2000'
+}
+{
+  atp: 37,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Gustafsson M.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 6, 6, '', '' ],
+  loseSets: [ 4, 3, 1, '', '' ],
+  comment: null,
+  year: '2000'
+}
+{
+  atp: 52,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Kucera K.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 7, 6, 7, '', '' ],
+  loseSets: [ 6, 3, 6, '', '' ],
+  comment: null,
+  year: '2000'
+}
+{
+  atp: 52,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Costa A.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 6, 6, '', '' ],
+  loseSets: [ 4, 1, 4, '', '' ],
+  comment: null,
+  year: '2000'
+}
+{
+  atp: 52,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '3rd Round',
+  bestOf: 5,
+  winner: 'Norman M.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 2 ],
+  winSets: [ 3, 4, 7, 6, 7 ],
+  loseSets: [ 6, 6, 6, 4, 6 ],
+  comment: null,
+  year: '2000'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Perry T.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 7, 6, 6, '', '' ],
+  loseSets: [ 6, 4, 3, '', '' ],
+  comment: null,
+  year: '2001'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Kratochvil M.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 6, 6, 6, '' ],
+  loseSets: [ 3, 4, 7, 3, '' ],
+  comment: null,
+  year: '2001'
+}
+{
+  atp: 33,
+  tourney: 'French Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Larsson M.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 6, 5, 7, '' ],
+  loseSets: [ 4, 2, 7, 6, '' ],
+  comment: null,
+  year: '2001'
+}
+{
+  atp: 38,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Arthurs W.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 7, 6, 6, '', '' ],
+  loseSets: [ 5, 2, 4, '', '' ],
+  comment: null,
+  year: '2001'
+}
+{
+  atp: 38,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Santoro F.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 7, 6, 6, '', '' ],
+  loseSets: [ 6, 1, 4, '', '' ],
+  comment: null,
+  year: '2001'
+}
+{
+  atp: 53,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Gaudio G.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 7, 6, 7, '', '' ],
+  loseSets: [ 6, 3, 6, '', '' ],
+  comment: null,
+  year: '2001'
+}
+{
+  atp: 53,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Canas G.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 3, 7, 6, '' ],
+  loseSets: [ 3, 6, 5, 3, '' ],
+  comment: null,
+  year: '2001'
+}
+{
+  atp: 53,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '3rd Round',
+  bestOf: 5,
+  winner: 'Kuerten G.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 2 ],
+  winSets: [ 6, 5, 7, 7, 6 ],
+  loseSets: [ 7, 7, 6, 6, 2 ],
+  comment: null,
+  year: '2001'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Pless K.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 3, 6, 6, 6, '' ],
+  loseSets: [ 6, 3, 4, 3, '' ],
+  comment: null,
+  year: '2002'
+}
+{
+  atp: 31,
+  tourney: 'French Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mamiit C.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 6, 5, 6, '' ],
+  loseSets: [ 3, 4, 7, 4, '' ],
+  comment: null,
+  year: '2002'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Dent T.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 4, 6, 7, 6, '' ],
+  loseSets: [ 6, 4, 6, 4, '' ],
+  comment: null,
+  year: '2002'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Savolt A.',
+  wonBy: [ 2, 0 ],
+  winSets: [ 7, 7, 0, '', '' ],
+  loseSets: [ 6, 5, 1, '', '' ],
+  comment: 'RET',
+  year: '2002'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Dupuis A.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 6, 3, 6, '' ],
+  loseSets: [ 4, 3, 6, 2, '' ],
+  comment: null,
+  year: '2002'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '3rd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Hrbaty D.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 7, 2, 6, 6, '' ],
+  loseSets: [ 6, 6, 4, 4, '' ],
+  comment: null,
+  year: '2002'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '4th Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Federer R.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 7, 6, '', '' ],
+  loseSets: [ 3, 6, 4, '', '' ],
+  comment: null,
+  year: '2002'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: 'Quarterfinals',
+  bestOf: 5,
+  winner: 'Agassi A.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 6, 7, 6, '' ],
+  loseSets: [ 7, 3, 5, 3, '' ],
+  comment: null,
+  year: '2002'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Sirianni J.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 6, 6, '', '' ],
+  loseSets: [ 3, 4, 4, '', '' ],
+  comment: null,
+  year: '2003'
+}
+{
+  atp: 31,
+  tourney: 'French Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Bjorkman J.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 6, 6, '', '' ],
+  loseSets: [ 1, 2, 4, '', '' ],
+  comment: null,
+  year: '2003'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Spadea V.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 6, 6, '', '' ],
+  loseSets: [ 2, 4, 4, '', '' ],
+  comment: null,
+  year: '2003'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Ljubicic I.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 6, 2, 6, '' ],
+  loseSets: [ 3, 4, 6, 2, '' ],
+  comment: null,
+  year: '2003'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '3rd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Karlovic I.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 7, 3, 6, 7, '' ],
+  loseSets: [ 6, 6, 3, 6, '' ],
+  comment: null,
+  year: '2003'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '4th Round',
+  bestOf: 5,
+  winner: 'Bjorkman J.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 3, 6, 7, '' ],
+  loseSets: [ 4, 6, 3, 6, '' ],
+  comment: null,
+  year: '2003'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Davydenko N.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 7, 2, 6, 7, '' ],
+  loseSets: [ 6, 6, 2, 6, '' ],
+  comment: null,
+  year: '2003'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Pavel A.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 6, 6, 7, '' ],
+  loseSets: [ 7, 3, 2, 6, '' ],
+  comment: null,
+  year: '2004'
+}
+{
+  atp: 30,
+  tourney: 'French Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Benneteau J.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 7, 7, 1, 6, '' ],
+  loseSets: [ 5, 5, 6, 3, '' ],
+  comment: null,
+  year: '2004'
+}
+{
+  atp: 35,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Gambill J.M.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 7, 6, '', '' ],
+  loseSets: [ 3, 5, 4, '', '' ],
+  comment: null,
+  year: '2004'
+}
+{
+  atp: 50,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Tabara M.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 3, 6, 6, '' ],
+  loseSets: [ 4, 6, 4, 4, '' ],
+  comment: null,
+  year: '2004'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Calleri A.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 2 ],
+  winSets: [ 6, 5, 6, 4, 6 ],
+  loseSets: [ 4, 7, 4, 6, 4 ],
+  comment: null,
+  year: '2005'
+}
+{
+  atp: 31,
+  tourney: 'French Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Acasuso J.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 7, 6, '', '' ],
+  loseSets: [ 4, 6, 2, '', '' ],
+  comment: null,
+  year: '2005'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Schuettler R.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 6, 6, '', '' ],
+  loseSets: [ 3, 3, 4, '', '' ],
+  comment: null,
+  year: '2005'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Rochus O.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 7, 6, 7, '', '' ],
+  loseSets: [ 6, 2, 6, '', '' ],
+  comment: null,
+  year: '2005'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '3rd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Novak J.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 5, 7, 6, 7, '' ],
+  loseSets: [ 7, 5, 4, 6, '' ],
+  comment: null,
+  year: '2005'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '4th Round',
+  bestOf: 5,
+  winner: 'Johansson T.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 7, 6, '', '' ],
+  loseSets: [ 4, 5, 4, '', '' ],
+  comment: null,
+  year: '2005'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Gimelstob J.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 7, 6, '', '' ],
+  loseSets: [ 2, 5, 2, '', '' ],
+  comment: null,
+  year: '2005'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Serra F.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 7, 6, 6, 7, '' ],
+  loseSets: [ 6, 7, 4, 6, '' ],
+  comment: null,
+  year: '2005'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '3rd Round',
+  bestOf: 5,
+  winner: 'Nieminen J.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 7, 3, 6, '' ],
+  loseSets: [ 3, 6, 6, 3, '' ],
+  comment: null,
+  year: '2005'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Ascione T.',
+  wonBy: [ 3, 2 ],
+  winSets: [ 6, 3, 6, 6, 6 ],
+  loseSets: [ 3, 6, 1, 7, 0 ],
+  comment: null,
+  year: '2006'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Sanguinetti D.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 7, 6, 4, 7, '' ],
+  loseSets: [ 5, 3, 6, 6, '' ],
+  comment: null,
+  year: '2006'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '3rd Round',
+  bestOf: 5,
+  winner: 'Federer R.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 6, 6, '', '' ],
+  loseSets: [ 3, 4, 3, '', '' ],
+  comment: null,
+  year: '2006'
+}
+{
+  atp: 31,
+  tourney: 'French Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Muller G.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 6, 7, '', '' ],
+  loseSets: [ 3, 1, 6, '', '' ],
+  comment: null,
+  year: '2006'
+}
+{
+  atp: 31,
+  tourney: 'French Open',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Massu N.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 7, 6, '', '' ],
+  loseSets: [ 4, 5, 4, '', '' ],
+  comment: null,
+  year: '2006'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Ramirez-Hidalgo R.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 6, 6, 6, '' ],
+  loseSets: [ 7, 4, 3, 3, '' ],
+  comment: null,
+  year: '2006'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Philippoussis M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 7, 6, 6, 6, '' ],
+  loseSets: [ 6, 4, 7, 3, '' ],
+  comment: null,
+  year: '2006'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '3rd Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Blake J.',
+  wonBy: [ 3, 2 ],
+  winSets: [ 6, 3, 4, 6, 6 ],
+  loseSets: [ 4, 6, 6, 1, 0 ],
+  comment: null,
+  year: '2006'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '4th Round',
+  bestOf: 5,
+  winner: 'Bjorkman J.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 2 ],
+  winSets: [ 6, 7, 4, 2, 6 ],
+  loseSets: [ 3, 6, 6, 6, 3 ],
+  comment: null,
+  year: '2006'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Moodie W.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 2 ],
+  winSets: [ 6, 4, 6, 6, 6 ],
+  loseSets: [ 4, 6, 4, 7, 4 ],
+  comment: null,
+  year: '2006'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Horna L.',
+  wonBy: [ 3, 2 ],
+  winSets: [ 7, 3, 2, 6, 6 ],
+  loseSets: [ 6, 6, 6, 4, 4 ],
+  comment: null,
+  year: '2007'
+}
+{
+  atp: 6,
+  tourney: 'Australian Open',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Tursunov D.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 6, 7, '', '' ],
+  loseSets: [ 2, 3, 6, '', '' ],
+  comment: null,
+  year: '2007'
+}
+{
+  atp: 31,
+  tourney: 'French Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Hewitt L.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 0 ],
+  winSets: [ 6, 6, 6, '', '' ],
+  loseSets: [ 3, 1, 3, '', '' ],
+  comment: null,
+  year: '2007'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Lu Y.H.',
+  wonBy: [ 2, 0 ],
+  winSets: [ 6, 6, 2, '', '' ],
+  loseSets: [ 3, 4, 1, '', '' ],
+  comment: 'RET',
+  year: '2007'
+}
+{
+  atp: 36,
+  tourney: 'Wimbledon',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Canas G.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 6, 7, 7, '' ],
+  loseSets: [ 7, 1, 6, 6, '' ],
+  comment: null,
+  year: '2007'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '1st Round',
+  bestOf: 5,
+  winner: 'Mirnyi M.',
+  loser: 'Baghdatis M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 7, 3, 7, '' ],
+  loseSets: [ 3, 5, 6, 6, '' ],
+  comment: null,
+  year: '2007'
+}
+{
+  atp: 51,
+  tourney: 'US Open',
+  series: 'Grand Slam',
+  round: '2nd Round',
+  bestOf: 5,
+  winner: 'Grosjean S.',
+  loser: 'Mirnyi M.',
+  wonBy: [ 3, 1 ],
+  winSets: [ 6, 6, 6, 6, '' ],
+  loseSets: [ 4, 7, 4, 3, '' ],
+  comment: null,
+  year: '2007'
+}

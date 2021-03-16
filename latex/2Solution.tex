@@ -1,0 +1,30 @@
+There are many types of sport in the world, even considering only individual sports. Each type of sports couldn't adopt the same model to determine the greatest player easily. We divide all types of sports into 3 categories based on how the tournament is conducted. %grammarlied
+
+\begin{enumerate}
+    \item Sudden Death Tournament/Elimination Tournament \label{form_tour}
+    \item Round Robin \label{form_round}
+    \item One Player Sports \label{form_oneplyr}
+\end{enumerate}
+
+
+For our idea, we would like to improve from our prior model on Women's Tennis. We choose type \ref{form_tour} "Elimination Tournament" with chosen sport "Men's Tennis".  We rather focus on developing the model of decaying accumulated rating over time to determine the GOAT of Men's Tennis, so we integrate the Women's Greatest Tennis Player model as part of a model to find GOAT. We concern that if the rating was accumulated over a year without decreasing, the player who played in the league for a longer duration would be advantageous. On the other hand, if the rating was determined for only a very short period, a newbie will have a chance to win pro players by luck, resulting in the wrong accumulated rating system. %grammarlied
+
+
+
+\subsubsection{Model to Find the GOAT for Men's Tennis}
+Begins with the same model as the Women's Tennis Tournament Competition, we assign the rating to each player in every year they have participated. As we mentioned the method of rating accumulation over the year to be developed, we apply the decaying constant to rating each year. This method illustrates the reduction of a player's performance, players who have the consistency rating, high peak performance, and play long enough are able to be the GOAT. The model of rating decaying will be as follow: %grammarlied
+\begin{equation}
+    \lambda(\lambda(...(\lambda R_1 + R_2) + R_3) + ...) + R_n = \sum_{i=1}^{n} {\lambda}^{n-i}R_i
+    \label{decay}
+  \end{equation}
+
+\noindent where $0<\lambda<1$ is the rate decaying constant, and $R_i$ is the rating of the $i^{th}$ year the player played until the $n^{th}$ retirement year. The model of finding peak performance will be as follow: %grammarlied
+\begin{equation}
+    max(\sum_{i=1}^{j} {\lambda}^{j-i}R_i) \quad \quad;\forall j \in {1, 2, 3, ..., n}
+\end{equation}
+
+\subsubsection{Result}
+From the dataset prepared by \cite{ATP_data}, we calculate using the computer program provided in the Appendix. We got that the GOAT for Men's Tennis (Considering only on the period 2000 - 2016) is Roger Federer. %grammarlied
+
+We hereby annotate that Roger Federer might not be the GOAT of Men's Tennis. But from our limited dataset, we can only test the model from 2000 to 2016, in which Roger Federer is the best player. However, after obtaining All-time Men's Tennis data, it's possible to use the same model and find the GOAT for Men's Tennis. %grammarlied
+

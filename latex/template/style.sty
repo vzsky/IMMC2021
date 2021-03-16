@@ -1,0 +1,207 @@
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsfonts, amsthm,  thmtools, graphicx, titlesec}
+\usepackage[left = 2.5cm, right = 2.5cm, top = 2.5cm, bottom = 2.5cm]{geometry}
+\usepackage[inline]{asymptote}
+
+\usepackage[dvipsnames,table,xcdraw]{xcolor} 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=RoyalBlue, 
+    urlcolor=RoyalBlue
+}
+
+\everymath{\displaystyle}
+
+\newcommand{\seperate}{\par\noindent\strut\hrulefill}
+
+\newcounter{Problem}[section]
+\newenvironment{prob}[1][]{\stepcounter{Problem} \newline\hyperlink{theproblem}{\textsf{\textbf{Problem \theProblem.}}}~ #1\rmfamily}{\medskip}
+
+\newenvironment{lined-prob}[1][]{\stepcounter{Problem}\par\noindent\hyperlink{theproblem}{\textsf{\textbf{Problem \theProblem.}}}~ #1\rmfamily\color{Blue}}{\medskip\color{black}\seperate\bigskip}
+
+\newenvironment{sol}[1][]{\newline\textbf{Solution.}~ #1\rmfamily}{\newline\null\hfill\blacksquare}{\medskip}
+
+\newcounter{Altsol}[section]
+\newenvironment{alt-sol}[1][]{\stepcounter{Altsol}\par\noindent\newline\textbf{Solution \theAltsol.}~ #1\rmfamily}{\newline\null\hfill\blacksquare}{\medskip}
+
+\newcounter{AltsolMarking}[section]
+\newenvironment{alt-sol-marking}[1][]{\stepcounter{AltsolMarking}\par\noindent\newline\textbf{Solution \theAltsolMarking.}~ #1\rmfamily}{\smallskip}
+
+\usepackage[framemethod=TikZ]{mdframed}
+\definecolor{Relic}{HTML}{00C030}
+\mdfdefinestyle{mdRelicbox}{%
+ linewidth=3pt,
+ skipabove=12pt,
+ frametitleaboveskip=5pt,
+ frametitlebelowskip=0pt,
+ skipbelow=2pt,
+ frametitlefont=\bfseries,
+ innertopmargin=4pt,
+ innerbottommargin=8pt,
+ nobreak=true,
+ backgroundcolor=Relic!18,
+ rightline=true,
+ leftline=true,
+ topline=false,
+ bottomline=false,
+ linecolor=Relic,
+ }
+\declaretheoremstyle[
+ headfont=\sffamily\bfseries\color{RawSienna},
+ mdframed={style=mdRelicbox},
+ headpunct={: },
+ postheadspace={0pt},
+]{thmRelicbox}
+
+\declaretheorem[style=thmRelicbox,name=Definition,numbered=no]{definition}
+\definecolor{Alien}{HTML}{0050F0}
+\mdfdefinestyle{mdAlienbox}{%
+ linewidth=3pt,
+ skipabove=12pt,
+ frametitleaboveskip=5pt,
+ frametitlebelowskip=0pt,
+ skipbelow=2pt,
+ frametitlefont=\bfseries,
+ innertopmargin=4pt,
+ innerbottommargin=8pt,
+ nobreak=true,
+ backgroundcolor=Alien!18,
+ rightline=true,
+ leftline=true,
+ topline=false,
+ bottomline=false,
+ linecolor=Alien,
+ }
+\declaretheoremstyle[
+ headfont=\sffamily\bfseries\color{RawSienna},
+ mdframed={style=mdAlienbox},
+ headpunct={. },
+ postheadspace={0pt},
+]{thmAlienbox}
+
+\mdfdefinestyle{mdgreenbox}{%
+ linewidth=3pt,
+ skipabove=12pt,
+ frametitleaboveskip=5pt,
+ frametitlebelowskip=0pt,
+ skipbelow=2pt,
+ frametitlefont=\bfseries,
+ innertopmargin=4pt,
+ innerbottommargin=8pt,
+ nobreak=true,
+ backgroundcolor=Salmon!10,
+ rightline=false,
+ leftline=true,
+ topline=false,
+ bottomline=false,
+ linecolor=Red,
+}
+\declaretheoremstyle[
+ headfont=\sffamily\bfseries\color{RawSienna},
+ mdframed={style=mdgreenbox},
+ headpunct={. },
+ postheadspace={0pt},
+]{thmgreenbox}
+\declaretheorem[style=thmgreenbox,name=Model,numbered=no]{model}
+
+\newenvironment{prflem}[1][]{\newline\textit{Proof of lemma:}~ #1\rmfamily}{ \qed \newline}{\medskip}
+\newenvironment{prfclaim}[1][]{\newline\textit{Proof:}~ #1\rmfamily}{ \qed \newline}{\medskip}
+
+\usepackage[
+backend=biber,
+style=verbose,
+citestyle=apa
+]{biblatex}
+
+\DeclareMathOperator\erf{erf}
+
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+
+\usepackage{listings} 
+
+\usepackage{mathptmx}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{algorithm} 
+\usepackage{algpseudocode} 
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{listings} 
+\usepackage{float}
+
+\setlength{\headsep}{0.2in}
+
+\renewcommand\subsection{\@startsection {subsection}{2}{\z@}%
+    {-3.5ex \@plus -1ex \@minus -.2ex}%
+    {2.3ex \@plus.2ex}%
+    {\normalfont\normalsize\bfseries}
+}
+\renewcommand\subsubsection{\@startsection {subsubsection}{3}{\z@}%
+    {-3.5ex \@plus -1ex \@minus -.2ex}%
+    {2.3ex \@plus.2ex}%
+    {\normalfont\normalsize\bfseries}
+}
+\renewcommand\paragraph{\@startsection {paragraph}{4}{\z@}%
+    {-3.5ex \@plus -1ex \@minus -.2ex}%
+    {2.3ex \@plus.2ex}%
+    {\normalfont\normalsize\bfseries}
+}
+
+\usepackage{titlesec}
+\titlespacing*{\subsubsection}{20pt}{*}{*}
+\titlespacing*{\paragraph}{40pt}{*}{*}
+\setcounter{secnumdepth}{4}
+
+\usepackage{tocloft}
+\renewcommand{\cftdot}{}
+
+\usepackage[
+backend=biber,
+style=verbose,
+citestyle=apa
+]{biblatex}
+
+\usepackage{indentfirst}
+
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{lightgray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}

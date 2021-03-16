@@ -1,0 +1,81 @@
+By focusing on Women's Tennis in 2018, we further gathered full data of 4 Grand Slam Tournaments to determine the real greatest player in that year. Since the problem has been addressed prior that focusing on the only result of each match does not efficient, our idea, instead, works on the skill levels of those two competitors in the match and how close is the match (match toughness). If the match is closest, it means both of the competitors are on par. %grammarlied
+
+Mainly we have two main steps to determine the rating of each competitor. The first is to determine the match toughness by composing the Game-Win Probability Estimator determination and the Expected Match-Win Probability calculation. Another step is Rating Calculation by the probability of winning the match. %grammarlied
+
+\subsubsection{Determining Game-Win Probability}
+% should we find an unbiased estimator? 
+First, from assumption \ref{as_gamewin} that a player performs independently on each game, and each game has an equal independent win probability, we defined match toughness as the mentioned probability. %gramarlied
+
+For the sake of calculation, we defined $\hat{p}_{game}$ as the independent probability that a player will win their specific opponent a game, which is calculated as the average of each point estimator of each set they played in the match. Each set resembles binomial distribution with parameter p as the winning probability since the probability of winning each game is constant and independent. The last game of each set that ends with a score of '6-0', '6-1', '6-2', '6-3', or '6-4' must be won by the set winner. Therefore, from Maximum Likelihood Estimation, we obtain the point estimator $\hat{p} = \frac{5}{5+n}$ for sets that end with a score '6-n' (for n ranging from 0 to 4). Besides, for sets that end with score '7-5' and '7-6', the Maximum Likelihood Estimation method yields $\hat{p} = 0.5$. %grammarlied
+
+$$\hat{p}_{game} = \frac{\Sigma \hat{p}_i}{\text {Total Set Played}}$$
+
+\noindent where $\hat{p}_i$ is the point estimator of set i.
+
+\subsubsection{Calculating Match-Win Probability}
+From the Game-Win Probability, we calculate the Set-Win Probability by splitting it into cases. We consider a situation where a set is won by scoring '6-0', '6-1', '6-2', '6-3', or '6-4', the situation that a set is won with a score of '7-5', and the situation that the set is extended to the tiebreaker and ended with score '7-6' independently. Combining all cases, we get that the probability of winning a set is %grammarlied
+
+
+\begin{equation}
+    \hat{p}_{set} = \sum_{n=0}^{4} \binom{5+n}{n} \hat{p}_{game}^6 (1-\hat{p}_{game})^n + \binom{10}{5} \hat{p}_{game}^7 (1-\hat{p}_{game})^5 + 2 \binom{10}{5} \hat{p}_{game}^7 (1-\hat{p}_{game})^6
+    \label{pset}
+\end{equation}
+
+Then we apply the same method to calculate the probability that a player will win a match given the probability that they will win a set. %grammarlied
+
+\begin{equation}
+    \hat{p}_{match} = \hat{p}_{set}^2 + 2\hat{p}_{set}^2(1-\hat{p}_{set})
+    \label{pmatch}
+\end{equation}
+
+From equation \ref{pset} and \ref{pmatch}, we can calculate the probability that a player will win a match against their opponent, given the independent probability that they will win a game against their particular opponent. %grammarlied
+
+\subsubsection{Defining Rating Point}
+\label{ratingdefinition}
+
+After the Expected Match-Win Probability of one match has been defined, we calculate the rating of each player in each tournament by considering each tournament independently. %grammarlied
+
+Firstly, from assumption \ref{as_champion}, we set the rating of the champion to be 1000, then we find the rating point of other players recursively. %grammarlied
+
+From assumption \ref{as_stable}, we argue that the rating point of a player should not depend on the round that the player got in, but should only depend on the match that they were eliminated from the tournament, which is the only match that they lose. With this assumption, we set a rating point for every player based on their performance in their last match of the tournament. The rating point of a player will reflect the relative performance of the champion. Formally, a player will have rating equal to $x$ if they have win probability equal to $P(X \leq x)$ where $X$ is a normal distribution (Assumption \ref{as_normal}) which parameter $\mu$ equals to the opponent's rating point and $\sigma = 1$. %grammarlied
+% explanation needed - why logistic, why mean at opponent's rating, what fixed s and why
+
+From the defined rating point, we showed that the rating point of a player will change according to this formula. %grammarlied
+\noindent
+From the cumulative density function of the normal distribution, %gramarlied
+\begin{equation*} 
+    P(X \leq x) = \frac{1}{2} \cdot [ 1 + \erf(\frac{x-\mu}{2\sigma})]
+\end{equation*}
+\noindent
+where $\erf$ denotes the gauss error function. Then, we derived %grammarlied
+
+\begin{equation}
+    \delta_{rating} = 2\sigma \cdot \erf^{-1}(2\hat{p}_{match}-1)
+    \label{rating}
+\end{equation}
+
+Furthermore, to prevent the case where players' skills differ by so much and the rating change is too strong, we set the maximum rating change to be 140 and the minimum rating change to be -140 inclusive. Therefore, the difference of rating of the winner and loser in every match is not greater than 140. %grammarlied
+
+\begin{equation}
+    R_{loser} = 
+    \left\{
+        \begin{array}{ll}
+            R_{winner} + 140  \quad \text{if } \delta_{rating} > 140 \\
+            R_{winner} - 140 \quad \text{if } \delta_{rating} < -140 \\
+            R_{winner} + \delta_{rating} \quad \text{otherwise} \\
+        \end{array},
+    \right.
+\end{equation}
+
+The justification for number 140 is that there are 128 contestants, with a maximum of $log_2 128 = 7$ match per player, and $\frac{1000}{7}$ is just a little bit more than $140$. Therefore, the least rating possible for every contestant in a tournament is equal to $20$, which is $1000 - 7\cdot140$. %grammarlied
+
+The rating of each player will be defined for each tournament and then accumulated for the whole year of 2018. The best player of 2018 is the player with the highest total rating. %grammarlied
+
+\subsubsection{Assignmment of rating point}
+Rating points will firstly be given to the tournament champion. The champion of each tournament will get an equal rating of 1000. Then rating point of other players will be assigned only when the player gets eliminated from around. The assignment of rating points will follow the definition stated in \ref{ratingdefinition}. This being said, each player will get a rating only one time per tournament relative to the winner of the match that the player got eliminated from the tournaments. %grammarlied
+
+To implement this, we visualize the tournament system as a tree and use topological ordering \cite{toposort} to sort the player and assign each player a rating in the appropriate time. %grammarlied
+
+\subsubsection{Result}
+
+According to our model, we simulate our process using the computer program shown in the Appendix and dataset provided by \cite{WTA_data}. We found that Angelique Kerber was the greatest player considering all 4 Grand Slam Tournaments. She scores 3958.71 rating points in total. %grammarlied

@@ -1,0 +1,66 @@
+Sports tournament competition has its unique character: each player will not face every other participant yet only some of them. This creates the problem of comparing the players that have never faced each other or combining the result of multiple elimination tournaments. People usually rank the player by focusing on the Win-Lose results of each match that occur along with those tournaments which are ungeneralized. Hence, many mathematics modelers have designed a rating system to rank the player each year even from different tournaments. %grammarlied
+
+The Elo rating system (\cite{ELO}) is one of the most widely used rating systems. However, it is only viable in an intense, dense competition with a sufficient amount of matches between players in a long season of competition, which occurs a match almost all the time through the entire rival. %grammarlied
+
+In this report, we will develop a mathematical model to find the greatest player based on statistics and scores in each match rather than just Win-Lose results for the Women's Tennis Tournament. Additionally, we also develop a model to find the greatest player of all time (GOAT player) for a Men's Tennis Tournament. We also provide discussion toward using this model in team sports. %grammarlied
+
+\subsection{Restatement of Problem}
+
+The main task is split into 3 smaller tasks, which are:
+\begin{enumerate}
+\item According to the Grand Slam Tournament results, find the best women tennis player in 2018.
+\item Find the GOAT player of a particular individual sport by combining data of all time, which we chose to work with Men's Tennis.
+\item Determine the adjustments necessary to the model to make the model applicable to a team sport.
+\end{enumerate} %grammarlied
+
+\subsection{General Assumption}
+
+In order for our mathematical model to work correctly, it needs some prior assumptions including:
+\begin{enumerate}
+    \item In each tournament, a player's performance is at the same level throughout the whole tournament. \label{as_stable}
+    \\ \textbf{Justification:} In a tournament, the time frame is small enough that the performance of each person will not vary by a lot in different matches. %grammarlied
+    
+    \item The closer the result of a match is the more chances that both players are at the same skill level. \label{as_close}
+    \\ \textbf{Justification:} If the loser has scored closer to the winner, it means that both players have about the same potential to score points against each other then the skill point can be considered as closer. %grammarlied
+    
+    \item The Winning Probability of one player to another specific player of each game is constant and independent, and it is assumed to be the same as the probability of winning a tiebreaker. \label{as_gamewin}
+    \\ \textbf{Justification:} Though there are factors such as tiredness and comeback potential, the winning probability is largely more dependent on the actual skill level of the player. Other factors are negligible, especially on a broad scale. Also, on average, the game length of the tiebreaker and the normal game are close enough that it can be considered the same. %grammarlied
+    
+    \item The champion of each tournament has the same level of skill (rating point) \label{as_champion}
+    \\ \textbf{Justification:} All of the Grand Slam Tournaments have a very similar level of competitiveness, therefore, the winner of each tournament is considered to have the same level of performance / rating point. %grammarlied
+    
+    \item In each tournament, players performance disitributed normally \label{as_normal}
+    \\ \textbf{Justification:} From the central limit theorem, no matter what distribution it originally is, the mean of samples will tends to distribute normally. %grammarlied
+    
+    \item Every player plays at their fullest potential. \label{as_fullpotential}
+    \\ \textbf{Justification:} We can assume that all players want the best position they could possibly get, so by this assumption, players should play at their fullest potential to achieve their goal. %grammarlied
+    
+    \item There is a correlation between player skill and the probability that a player will win. A better player must have a higher chance of winning a game against the same opponent.
+    \label{as_skillprob}
+    \\ \textbf{Justification:} In a long run, if a player has more skill than the opponent, then it is more likely that the player will win more games against the opponent. %grammarlied
+    
+\end{enumerate}
+
+\subsection{Crucial factors}
+
+The crucial factors in finding the greatest tennis player from 4 grand slam tournaments of women's tennis 2018 are the following:
+\begin{enumerate}
+    \item Games won by the player in every set in every match
+    \item Match result
+\end{enumerate} %grammarlied
+
+We use the number of games won and lose by a player in the specific match to determine the winning and losing ratio, which helps in estimating the probability of a player winning a game, which will later be used to determine the probability of a player winning a set and a match. The probability of winning a match is assumed to have a close relationship with the player's skill as mentioned in the assumption \ref{as_skillprob}. %grammarlied
+
+The match result is used in addition to the game data to determine the champion and to recursively define the rating point for every player based on the winner's rating. %grammarlied
+
+These factors will help us find the performance of the loser compared to the winner to help to calculate the rating of each player.\newline %grammarlied
+\newpage
+
+\noindent 
+The crucial factors in finding the GOAT of any sports we believed as following:
+\begin{enumerate}
+    \item The forms of the competition of each sport
+    \item Performance of the player 
+    \item Collective performance of the player in the previous year
+\end{enumerate}
+These factors will help us find the cumulative rating of the player from the different types of sports in the precedent years. %grammaried

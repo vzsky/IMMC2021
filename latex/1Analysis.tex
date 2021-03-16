@@ -1,0 +1,37 @@
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Player}} & \multicolumn{1}{c|}{\textbf{Rating}} \\\hline
+    Angelique Kerber                      & 3958.7124       \\\hline
+    Naomi Osaka                           & 3956.5190       \\\hline
+    Kiki Bertens                          & 3947.9802       \\\hline
+    Simona Halep                          & 3942.2001       \\\hline
+    Carla Suarez Navarro                  & 3938.9465       \\\hline
+    Alison Van Uytvanck                   & 3935.3274       \\\hline
+    Madison Keys                          & 3933.5511       \\\hline
+    Caroline Garcia                       & 3930.0393       \\\hline
+    Anett Kontaveit                       & 3928.6231       \\\hline
+    Caroline Wozniacki                    & 3927.4804       \\\hline
+    \end{tabular}
+    \caption{The table shows the top 10 player ranked by the rating system developed in \ref{ratingdefinition}}
+    \label{tab:10-rating}
+\end{table}
+
+From all the tournaments in 2018, Angelique Kerber won 1 championship of Wimbledon, 1 semifinal of Australian Open, and 1 quarterfinal of French open. She won against Naomi Osaka with a score ['6-2', '6-4'] and Kiki Bertens with a score of ['7-6', '7-6']. Naomi Osaka and Kiki Bertens were ranked second and third respectively from our model, so Angelique Kerber, who won against both of them unsurprisingly ranked first, as seen from table \ref{tab:10-rating}. Even though she lost to Simona Halep twice, those two matches were a close match with $\hat p_{match} = 0.5971 \text{ and } 0.8880$. %grammarlied
+
+However, Kiki Bertens who won no championship in 2018 was ranked third according to our model. We argue that this is not a mistake because Kiki Bertens loses to Angelique Kerber once with a really close score of ['7-6', '7-6']. This match connotes that Kiki Bertens's performance in the tournament was close to Angelique, the winner, and thus receive a high rating. She also lost to Caroline Wozniacki early in round 3 in the Australian open where Caroline Wozniacki later won a championship. %grammarlied
+
+\subsection{Model Strengths}
+\begin{enumerate}
+    \item This model prevents the situation where good players have too low rating when they lose to a better player in early rounds.
+    \item Likewise, this model prevent bad players from having too high rating by luckily reach deeper rounds but then lose to the other player with a huge difference.
+    \item Rating determination of players based mainly on player's performance in each of the matches. %grammarlied
+\end{enumerate}
+\subsection{Model Limitations}
+\begin{enumerate}
+    \item For the situation like ['7-6', '6-7', '7-6'], $\hat{p}_{game} = \hat{p}_{match} = 0.5$. Therefore, the rating of both players will be equivalent. This means that this model will sometimes (very unlikely) be undecisive in finding the best player.
+    \item The model will disregard deuces. For example, sets with scores '7-5', '7-6', '8-6', '9-7', are equivalent.
+    \item At some specific score of the match, the model will count the close performance as the same rating, such as loser in match ['6-0', '6-0'] and ['6-1', '6-1'] got rating equal to -140 for both.
+    \item Player's performance in matches that they win will not directly affect their rating, but only the matches that they lose will. %grammarlied
+\end{enumerate}
